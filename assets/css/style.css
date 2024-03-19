@@ -74,7 +74,7 @@
    */
 
   /* font-family */
-  --ff-poppins: 'Poppins', sans-serif;
+  --ff-poppins: 'Poppins', 'Noto Sans KR', sans-serif;
 
   /* font-size */
   --fs-1: 24px;
@@ -1424,10 +1424,10 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .testimonials-avatar-box {
     transform: translate(30px, -30px);
-    border-radius: 20px;
+    border-radius: 50%;
   }
 
-  .testimonials-avatar-box img { width: 80px; }
+  .testimonials-avatar-box img { width: 50px; }
 
   .testimonials-item-title {
     margin-bottom: 10px;
