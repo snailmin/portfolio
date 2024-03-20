@@ -1006,7 +1006,7 @@ textarea.form-input::-webkit-resizer { display: none; }
     width: 100%;
   }
   .project-post-item > a {
-    flex-direction: row;
+    flex-direction: column;
   }
 
   /**
@@ -1528,6 +1528,7 @@ textarea.form-input::-webkit-resizer { display: none; }
   /* 
     Project
   */
+
   .project-banner-box {
     width: 50%;
   }
@@ -1536,6 +1537,7 @@ textarea.form-input::-webkit-resizer { display: none; }
     width: 50%;
   }
   .project-post-item > a {
+    display: flex;
     flex-direction: row;
   }
   /**

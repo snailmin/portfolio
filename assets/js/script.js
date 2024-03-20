@@ -1,5 +1,10 @@
 'use strict';
 
+// link click event
+const openLink = (url) => {
+  window.open(url);
+}
+
 
 
 // element toggle function
