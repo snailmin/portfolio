@@ -61,3 +61,33 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
   });
 }
+
+
+
+// email
+document.emailFrm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    
+    // code fragment
+    let data = {
+      service_id: 'service_o8dhcrc',
+      template_id: 'template_olv1qsa',
+      user_id: 'F8JW2o4MUTvZhepQ2',
+      template_params: {
+          'from_name': e.target.fullname.value,
+          'from_email': e.target.email.value,
+          'message': e.target.message.value
+      }
+    };
+
+    $.ajax({
+      url: 'https://api.emailjs.com/api/v1.0/email/send',
+      type: 'post',
+      data: JSON.stringify(data),
+      contentType: 'application/json',
+    }).done(() => {
+      alert('메일이 전송되었습니다☺️');
+    }).fail((error) => {
+      alert('메일 전송에 실패했습니다😥' + JSON.stringify(error));
+    })
+})

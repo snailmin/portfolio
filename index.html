@@ -24,6 +24,11 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+
+  <!-- jquery -->
+  <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+
 </head>
 
 <body>
@@ -122,6 +127,20 @@
           </li>
         </ul>
       </div>
+      
+      <div class="separator"></div>
+
+        <!-- <li class="social-item">
+          <a href="#" class="social-link">
+            <ion-icon name="logo-facebook"></ion-icon>
+          </a>
+        </li> -->
+        <div class="pdf-link-wrap">
+          <div class="link-content" onclick="openLink('https://bucket-minjeong2024.s3.ap-northeast-2.amazonaws.com/%EC%9D%B4%EB%AF%BC%EC%A0%95_%ED%8F%AC%ED%8A%B8%ED%8F%B4%EB%A6%AC%EC%98%A4.pdf')">
+            <p class="link">↗️ PDF Portfolio 보러가기</p>
+          </div>
+        </div>
+        
     </aside>
 
 
@@ -182,10 +201,16 @@
           </p>
 
           <p class="kr-text">
-            저는 새로운 것을 배우는 것을 좋아하고, <br />
-            요즘은 기록하는 습관을 만들기 위해 노력하고 있습니다. <br />
-            꾸준히 지속 가능하도록 공부하는 개발자가 목표입니다.
+            저는 새로운 무언가를 배우는 것을 좋아하며, 주어진 상황에 빠르게 적응하려 노력합니다.<br />
+            JAVA 웹개발 과정을 수강하며 짧은 기간동안 많은 지식을 학습할 수 있었습니다.<br />
+            학습내용들을 개인 노션페이지에 정리해나가며 저의 지식으로 만들어 마무리할 예정입니다.<br />
+            <br />
+            최근 관심사는 스프링 프레임워크, Computer Science 기반 지식입니다.<br />
+            성장하는 개발자가 되도록 꾸준히 공부하는 것이 제 목표입니다.
           </p>
+          <p class="kr-text">
+          </p>
+          
         </section>
         
         
@@ -249,67 +274,23 @@
           </div>
 
           <ol class="timeline-list">
-
             <li class="timeline-item">
-
               <h4 class="h4 timeline-item-title">KH정보교육원 공공데이터 융합 자바개발자 과정</h4>
-
               <span>2023.09.11 — 2023.02.26</span>
-
               <!-- <p class="timeline-text">
-                
               </p> -->
-
             </li>
 
             <li class="timeline-item">
-
               <h4 class="h4 timeline-item-title">숙명여자대학교 화학과</h4>
-
               <span>2012.03.02 — 2016.08.25</span>
-
               <!-- <p class="timeline-text">
-                
               </p> -->
-
             </li>
           </ol>
 
         </section>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">Experience</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Creative director</h4>
-
-              <span>2015 — Present</span>
-
-              <p class="timeline-text">
-                Nemo enim ipsam voluptatem blanditiis praesentium voluptum delenit atque corrupti, quos dolores et qvuas
-                molestias
-                exceptur.
-              </p>
-
-            </li>
-          </ol>
-
-        </section>
-
-
-
-  
-
+        
       </article>
 
       <!--
@@ -778,10 +759,6 @@
 
       </article>
 
-
-
-
-
       <!--
         - #CONTACT
       -->
@@ -791,20 +768,12 @@
         <header>
           <h2 class="h2 article-title">Contact</h2>
         </header>
-
-        <section class="mapbox" data-mapbox>
-          <figure>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d199666.5651251294!2d-121.58334177520186!3d38.56165006739519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809ac672b28397f9%3A0x921f6aaa74197fdb!2sSacramento%2C%20CA%2C%20USA!5e0!3m2!1sen!2sbd!4v1647608789441!5m2!1sen!2sbd"
-              width="400" height="300" loading="lazy"></iframe>
-          </figure>
-        </section>
-
+        
         <section class="contact-form">
 
-          <h3 class="h3 form-title">Contact Form</h3>
+          <h3 class="h3 form-title">Message Form</h3>
 
-          <form action="#" class="form" data-form>
+          <form class="form" data-form name="emailFrm">
 
             <div class="input-wrapper">
               <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
@@ -823,17 +792,22 @@
 
         </section>
 
+        
       </article>
-
+      
     </div>
-
+    
   </main>
 
-
-
-
-
-
+    <script src="https://utteranc.es/client.js"
+  repo="be-anything/portfolio"
+  issue-term="pathname"
+  label="utterances"
+  theme="github-dark"
+  crossorigin="anonymous"
+  async>
+</script>
+  
   <!--
     - custom js link
   -->
@@ -844,7 +818,6 @@
   -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
 </body>
 
 </html>

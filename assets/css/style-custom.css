@@ -6,15 +6,51 @@
 .kr-text {
   font-size: medium;
 }
+.comment-wrap {
+}
 
+.utterances {
+  /* background: #000; */
+  /* margin:  auto; */
+  /* max-width: 1200px; */
+  margin-bottom: 80px;
+} 
+
+/* sidebar */
+.pdf-link-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+.pdf-link-wrap .link {
+  cursor: pointer;
+  color: var(--white-1);
+  background: var(--bg-gradient-yellow-2);
+  font-size: var(--fs-5);
+  font-weight: var(--fw-400);
+  width: max-content;
+  padding: 9px 12px;
+  border-radius: 8px;
+  margin-right: 6px;
+  transition: var(--transition-1);
+  border: 1px solid var(--jet);
+}
+.pdf-link-wrap .link:hover {
+  background: var(--text-gradient-yellow);
+  color: var(--onyx);
+  transition: var(--transition-1);
+}
+
+
+
+
+
+/* skill */
 .skill-title {
   color: var(--title-gold);
   font-size: var(--fs-4);
   line-height: 2.0;
 }
 
-
-/* skill */
 .skill-list {
   display: grid;
   grid-template-columns: 1fr;

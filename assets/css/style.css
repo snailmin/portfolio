@@ -322,7 +322,7 @@ main {
   transition: var(--transition-2);
 }
 
-.sidebar.active { max-height: 405px; }
+.sidebar.active { max-height: 500px; }
 
 .sidebar-info {
   position: relative;
@@ -539,6 +539,9 @@ main {
   background: var(--bg-gradient-jet);
   border-radius: inherit;
   z-index: -1;
+}
+.service-item:hover {
+  background: var(--bg-gradient-yellow-1);
 }
 
 .service-icon-box { margin-bottom: 10px; }
@@ -1099,7 +1102,7 @@ textarea.form-input::-webkit-resizer { display: none; }
     margin-bottom: 30px;
   }
 
-  .sidebar.active { max-height: 584px; }
+  .sidebar.active { max-height: 810px; }
 
   .sidebar-info { gap: 25px; }
 
@@ -1337,7 +1340,11 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .has-scrollbar::-webkit-scrollbar-button { width: 100px; }
 
-
+  .utterances {
+    /* background: #000; */
+    /* margin:  auto; */
+    max-width: 700px;
+  } 
 
   /**
    * SIDEBAR
@@ -1465,6 +1472,11 @@ textarea.form-input::-webkit-resizer { display: none; }
     box-shadow: var(--shadow-5);
   }
 
+  .utterances {
+    /* background: #000; */
+    /* margin:  auto; */
+    max-width: 950px;
+  } 
 
 
   /**
@@ -1586,7 +1598,11 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   body::-webkit-scrollbar-button { height: 60px; }
 
-
+  .utterances {
+    /* background: #000; */
+    /* margin:  auto; */
+    max-width: 1200px;
+  } 
 
   /**
    * REUSED STYLE
