@@ -1008,7 +1008,7 @@ textarea.form-input::-webkit-resizer { display: none; }
   .project-content {
     width: 100%;
   }
-  .project-post-item > a {
+  .project-post-item > div {
     flex-direction: column;
   }
 
@@ -1291,7 +1291,7 @@ textarea.form-input::-webkit-resizer { display: none; }
     padding: 25px; 
     width: 100%;
   }
-  .project-post-item > a {
+  .project-post-item > div {
     flex-direction: column;
   }
 
@@ -1418,7 +1418,7 @@ textarea.form-input::-webkit-resizer { display: none; }
   .project-content {
     width: 100%;
   }
-  .project-post-item > a {
+  .project-post-item > div {
     flex-direction: column;
   }
 
@@ -1548,7 +1548,7 @@ textarea.form-input::-webkit-resizer { display: none; }
   .project-content {
     width: 50%;
   }
-  .project-post-item > a {
+  .project-post-item > div {
     display: flex;
     flex-direction: row;
   }
